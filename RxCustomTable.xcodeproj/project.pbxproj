@@ -13,9 +13,11 @@
 		87FC667A235C7402009E714D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87FC6678235C7402009E714D /* Main.storyboard */; };
 		87FC667C235C7403009E714D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87FC667B235C7403009E714D /* Assets.xcassets */; };
 		87FC667F235C7403009E714D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87FC667D235C7403009E714D /* LaunchScreen.storyboard */; };
+		BF22344D9D5AC60B707896E3 /* libPods-RxCustomTable.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4EB19D5C761F7808FDE759F /* libPods-RxCustomTable.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20C8999244C0A9915E626E3A /* Pods-RxCustomTable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxCustomTable.release.xcconfig"; path = "Target Support Files/Pods-RxCustomTable/Pods-RxCustomTable.release.xcconfig"; sourceTree = "<group>"; };
 		87FC666F235C7402009E714D /* RxCustomTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxCustomTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87FC6672235C7402009E714D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87FC6674235C7402009E714D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		87FC667B235C7403009E714D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87FC667E235C7403009E714D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87FC6680235C7403009E714D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF8D5543820AAE5CEE968EE9 /* Pods-RxCustomTable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxCustomTable.debug.xcconfig"; path = "Target Support Files/Pods-RxCustomTable/Pods-RxCustomTable.debug.xcconfig"; sourceTree = "<group>"; };
+		D4EB19D5C761F7808FDE759F /* libPods-RxCustomTable.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RxCustomTable.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF22344D9D5AC60B707896E3 /* libPods-RxCustomTable.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				87FC6671235C7402009E714D /* RxCustomTable */,
 				87FC6670235C7402009E714D /* Products */,
+				99CFF6C2A494626D10D1C710 /* Pods */,
+				F9C62C54A66000CE7CC04583 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = RxCustomTable;
 			sourceTree = "<group>";
 		};
+		99CFF6C2A494626D10D1C710 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF8D5543820AAE5CEE968EE9 /* Pods-RxCustomTable.debug.xcconfig */,
+				20C8999244C0A9915E626E3A /* Pods-RxCustomTable.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F9C62C54A66000CE7CC04583 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4EB19D5C761F7808FDE759F /* libPods-RxCustomTable.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 87FC6683235C7403009E714D /* Build configuration list for PBXNativeTarget "RxCustomTable" */;
 			buildPhases = (
+				85E5E6F613AA541432E78F2D /* [CP] Check Pods Manifest.lock */,
 				87FC666B235C7402009E714D /* Sources */,
 				87FC666C235C7402009E714D /* Frameworks */,
 				87FC666D235C7402009E714D /* Resources */,
@@ -132,6 +158,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		85E5E6F613AA541432E78F2D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxCustomTable-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		87FC666B235C7402009E714D /* Sources */ = {
@@ -282,6 +333,7 @@
 		};
 		87FC6684235C7403009E714D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF8D5543820AAE5CEE968EE9 /* Pods-RxCustomTable.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +352,7 @@
 		};
 		87FC6685235C7403009E714D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20C8999244C0A9915E626E3A /* Pods-RxCustomTable.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,6 @@
+module Pods_RxCustomTable {
+  umbrella header "Pods-RxCustomTable-umbrella.h"
+
+  export *
+  module * { export * }
+}
